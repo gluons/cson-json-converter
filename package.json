@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "lint": "eslint --ext .js,.vue src/"
   },
   "repository": {
     "type": "git",
