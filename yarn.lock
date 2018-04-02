@@ -1257,9 +1257,9 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-coffeescript@^1.10.0:
-  version "1.12.7"
-  resolved "https://registry.yarnpkg.com/coffeescript/-/coffeescript-1.12.7.tgz#e57ee4c4867cf7f606bfc4a0f2d550c0981ddd27"
+coffeescript@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/coffeescript/-/coffeescript-2.2.4.tgz#427c038e17a125e52a79fdb3106761753b8585d2"
 
 collection-visit@^1.0.0:
   version "1.0.0"
@@ -1471,11 +1471,10 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-cson-parser@^3.0.0:
+"cson-parser@file:./vendor/cson-parser":
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/cson-parser/-/cson-parser-3.0.0.tgz#274ee5990f8b8dc5bed3caf637d27e5afd1c506b"
   dependencies:
-    coffeescript "^1.10.0"
+    coffeescript "^2.2.4"
 
 css-color-names@0.0.4:
   version "0.0.4"

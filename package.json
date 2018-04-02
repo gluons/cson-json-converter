@@ -24,7 +24,7 @@
   },
   "homepage": "https://gitlab.com/gluons/cson-json-converter",
   "dependencies": {
-    "cson-parser": "^3.0.0",
+    "cson-parser": "file:./vendor/cson-parser/",
     "vue": "^2.5.2",
     "vuetify": "^1.0.11"
   },
