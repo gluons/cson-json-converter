@@ -4,8 +4,8 @@
   "description": "An online CSON - JSON converter.",
   "private": true,
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html",
+    "dev": "poi",
+    "build": "poi build",
     "lint": "eslint --ext .js,.vue src/"
   },
   "repository": {
@@ -29,17 +29,14 @@
     "vuetify": "^1.0.11"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^1.0.0",
     "autoprefixer": "^8.2.0",
-    "babel-preset-env": "^1.6.1",
     "browserslist-config-vue": "^1.0.3",
     "eslint": "^4.19.1",
     "eslint-config-gluons": "^3.0.0",
     "eslint-plugin-vue": "^4.4.0",
     "node-sass": "^4.8.3",
-    "parcel-bundler": "^1.7.0",
+    "poi": "^9.6.13",
     "pug": "^2.0.3",
-    "vue-hot-reload-api": "^2.3.0",
-    "vue-template-compiler": "^2.5.16"
+    "sass-loader": "^6.0.7"
   }
 }
