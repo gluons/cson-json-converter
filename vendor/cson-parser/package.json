@@ -1,0 +1,57 @@
+{
+  "name": "cson-parser",
+  "version": "3.0.0",
+  "description": "Safe parsing of CSON files",
+  "license": "BSD-3-Clause",
+  "main": "lib/cson-parser.js",
+  "homepage": "https://github.com/groupon/cson-parser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/groupon/cson-parser"
+  },
+  "bugs": {
+    "url": "https://github.com/groupon/cson-parser/issues"
+  },
+  "scripts": {
+    "pretest": "eslint lib test",
+    "test": "mocha",
+    "posttest": "nlm verify"
+  },
+  "nlm": {
+    "license": {
+      "files": [
+        "lib"
+      ]
+    }
+  },
+  "dependencies": {
+    "coffeescript": "^2.2.4"
+  },
+  "devDependencies": {
+    "assertive": "^2.1.0",
+    "eslint": "^4.7.1",
+    "eslint-config-groupon": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-prettier": "^2.4.0",
+    "mocha": "^3.1.2",
+    "nlm": "^3.0.0",
+    "nodemon": "^1.0.0",
+    "prettier": "^1.9.2"
+  },
+  "author": {
+    "name": "Groupon",
+    "email": "opensource@groupon.com"
+  },
+  "keywords": [
+    "cson",
+    "parser"
+  ],
+  "files": [
+    "*.js",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
