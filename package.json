@@ -23,8 +23,11 @@
     "url": "https://gitlab.com/gluons/cson-json-converter/issues"
   },
   "homepage": "https://gitlab.com/gluons/cson-json-converter",
+  "resolutions": {
+    "cson-parser/coffeescript": "^2.2.4"
+  },
   "dependencies": {
-    "cson-parser": "file:./vendor/cson-parser/",
+    "cson-parser": "^3.0.0",
     "vue": "^2.5.2",
     "vuetify": "^1.0.11"
   },
