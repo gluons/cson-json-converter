@@ -80,7 +80,7 @@ export default {
 		},
 		convertJSON2CSON() {
 			try {
-				if (!this.csonContent) {
+				if (!this.jsonContent) {
 					throw new Error('JSON code is empty.');
 				}
 				this.csonContent = json2cson(this.jsonContent);
