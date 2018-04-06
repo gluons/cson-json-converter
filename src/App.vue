@@ -5,6 +5,10 @@ v-app#app
 			a(href='.').mainlink CSON - JSON Converter
 	v-content
 		Home
+	v-footer(color='purple', dark, :height='60', app): v-layout(fill-height, align-center)
+		v-flex(xs12).text-xs-center
+			div Made with ❤️ by #[footer-link(url='https://gitlab.com/gluons') Saran Tanpituckpong]
+			div: footer-link(url='https://gitlab.com/gluons/cson-json-converter') View on GitLab
 </template>
 
 <script>
