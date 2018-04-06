@@ -64,20 +64,28 @@ export default {
 		};
 	},
 	methods: {
+		showError(msg) {
+			this.errMsg = `Error: ${msg}`;
+			this.snackbar = true;
+		},
 		convertCSON2JSON() {
 			try {
+				if (!this.csonContent) {
+					throw new Error('CSON code is empty.');
+				}
 				this.jsonContent = cson2json(this.csonContent);
 			} catch (err) {
-				this.errMsg = `Error: ${err.message}`;
-				this.snackbar = true;
+				this.showError(err.message);
 			}
 		},
 		convertJSON2CSON() {
 			try {
+				if (!this.csonContent) {
+					throw new Error('JSON code is empty.');
+				}
 				this.csonContent = json2cson(this.jsonContent);
 			} catch (err) {
-				this.errMsg = `Error: ${err.message}`;
-				this.snackbar = true;
+				this.showError(err.message);
 			}
 		},
 		closeSnackbar() {
