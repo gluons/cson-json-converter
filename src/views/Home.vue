@@ -11,7 +11,11 @@ v-layout(
 		| {{ errMsg }}
 		v-btn(dark, flat, @click.native='closeSnackbar') Close
 	v-flex(xs5).flex-col
-		CodeTextArea(label='CSON', v-model='csonContent')
+		CodeTextArea(
+			label='CSON',
+			v-model='csonContent'
+			mode='text/coffeescript'
+		)
 	v-flex(xs1).flex-col
 		v-layout(column, fill-height, justify-center, align-center)
 			v-flex(xs1): v-tooltip(top)
@@ -37,7 +41,12 @@ v-layout(
 					v-icon(dark) keyboard_arrow_left
 				span Convert JSON to CSON
 	v-flex(xs5).flex-col
-		CodeTextArea(label='JSON', v-model='jsonContent')
+		CodeTextArea(
+			label='JSON',
+			v-model='jsonContent'
+			mode='application/json'
+			use-tab
+		)
 </template>
 
 <script>
